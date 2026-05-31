@@ -134,10 +134,21 @@ The React Native app includes a WebView component, suggesting it embeds this web
 
 ---
 
+## Confirmed Values (live device — firmware 2.1)
+
+| Field | Confirmed range / behaviour |
+|---|---|
+| `saturation` | **0–255** (not 0–100) |
+| `brightness` | 0–100 (from command reference; live test inconclusive — device was off) |
+| `hue` | integer, observed value 10 |
+| `speed` | integer, observed value 28 |
+| `setModPack` / `modeIndex` | **0-based** (observed `currentModpack: 2`, `modeIndex: 2`) |
+| Unprompted state pushes | **None** — device only replies to `getData`; proxy must poll |
+| Device IP (local) | `192.168.4.28` (mDNS name: `exoyone38651`) |
+
 ## Open Questions
 
-- Exact value ranges for brightness, speed, hue, saturation (likely 0–100 or 0–255)
-- Whether `setModPack`/`setEffect` indices are 0-based or 1-based
-- Full set of available mod packs, effects, patterns, palettes (need live device)
-- Whether device pushes state unprompted or only responds to `getData`
+- Exact upper bound for `speed`, `hue` (0–255? 0–360?)
+- Full set of available mod packs, effects, patterns, palettes (need live device with lights on)
 - Exact HTTP routes served by the device web UI
+- Whether firmware 2.1 added any commands not present in the decompiled 1.3.7 APK
