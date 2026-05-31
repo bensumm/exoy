@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">1</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen">
+    </style>
+    <style name="Theme.BootSplash.DayNight" parent="@style/Theme.BootSplash.Common">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Theme.BootSplash.EdgeToEdge" parent="@style/Theme.BootSplash.EdgeToEdge.DayNight">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/darkContentBarsStyle</item>
+        <item name="android:windowLightNavigationBar">?attr/darkContentBarsStyle</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">1</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+</resources>

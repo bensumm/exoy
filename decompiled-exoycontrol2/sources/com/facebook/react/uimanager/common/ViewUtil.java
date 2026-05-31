@@ -1,0 +1,13 @@
+package com.facebook.react.uimanager.common;
+
+/* JADX INFO: loaded from: classes.dex */
+public class ViewUtil {
+    public static int getUIManagerType(int i) {
+        return i % 2 == 0 ? 2 : 1;
+    }
+
+    @Deprecated
+    public static boolean isRootTag(int i) {
+        return i % 10 == 1;
+    }
+}
