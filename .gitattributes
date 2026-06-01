@@ -1,0 +1,16 @@
+# Normalize line endings to LF in the repo; let git handle CRLF on Windows checkout
+* text=auto eol=lf
+
+# Binaries — no line-ending conversion
+*.apk binary
+*.bin binary
+*.prof binary
+*.profm binary
+*.gz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.otf binary
+*.webp binary
+*.svg text eol=lf
