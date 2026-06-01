@@ -1,0 +1,19 @@
+{
+  "name": "@exoy/bridge",
+  "version": "0.1.0",
+  "description": "Exoy local bridge: UDP transport, mDNS discovery, WebSocket + REST server, SQLite, static serving",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "node --watch --experimental-strip-types src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@exoy/protocol": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.6.3"
+  }
+}
